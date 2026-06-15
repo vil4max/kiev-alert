@@ -1,12 +1,8 @@
 # KievAlert (public demo)
 
-`KievAlert` is a **pet project / public demo** iOS app (SwiftUI).
+SwiftUI iOS app for **air-raid alert status** by region. Long-term goal: **CarPlay** — a glanceable ALARM / QUIET experience on the car screen without digging into the phone.
 
-Its long-term goal is **CarPlay support** to help drivers quickly understand the **air-raid alert status** without digging into the phone — a simple, glanceable “ALARM / QUIET” experience on the car screen.
-
-This repository is also used as a sandbox for trying out **new approaches and features**.
-
-Currently the app shows the alert status for the **selected region** (auto-detected via location) and a **Map** tab with region status markers.
+The app shows alert status for the **selected region** (auto-detected via location) and a **Map** tab with region status markers.
 
 ## Future work
 
@@ -36,8 +32,6 @@ Clean-ish layering (kept intentionally small):
   - use case: `FetchAllRegionStatusesUseCase`
 - **App (Xcode target / composition root)**: `KievAlert/`
   - composes modules in `AppCoordinator`
-
-**Owner note (2026-05):** keep evolving this sandbox toward **Clean Architecture** at the **app / module** level (clear domain vs adapters, dependency rule inward) and try **Clean Swift (VIP)** on **heavy screens** (View, Interactor, Presenter, Entity, Router) when a single `*ViewModel` would get too large—VIP is per-scene structure; “full” Clean is about layers across the whole app, not the same thing.
 
 ## Localization
 
